@@ -1,0 +1,17 @@
+{
+  "name": "Zain Ventures India — Inter-State Bus Hire from Rourkela",
+  "short_name": "Zain Ventures",
+  "description": "Inter-state bus, tempo and car hire from Rourkela across Odisha, Jharkhand, West Bengal and Uttar Pradesh.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f4ecdd",
+  "theme_color": "#14181f",
+  "lang": "en-IN",
+  "categories": ["travel", "business"],
+  "icons": [
+    { "src": "logo-96.png",  "sizes": "96x96",   "type": "image/png", "purpose": "any" },
+    { "src": "logo.png",     "sizes": "412x400", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

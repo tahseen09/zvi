@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-IN">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
     <link rel="canonical" href="https://www.zainventures.in" />
+    <link rel="alternate" hreflang="en-IN" href="https://www.zainventures.in/" />
+    <link rel="alternate" hreflang="x-default" href="https://www.zainventures.in/" />
 
     <meta name="theme-color" content="#14181F" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <link rel="icon" type="image/png" href="logo-96.png" />
     <link rel="apple-touch-icon" href="logo-96.png" />
+    <link rel="manifest" href="site.webmanifest" />
 
     <link rel="preload" as="image" href="logo-96.png" fetchpriority="high" />
     <link rel="preload" as="style" href="styles.css" />
@@ -28,8 +31,8 @@
 
     <title>Zain Ventures India — Inter-State Bus Hire from Rourkela | AC Coach, Tempo, Car Rental</title>
 
-    <meta property="og:title" content="Zain Ventures India — Bus Hire & Rental in Rourkela" />
-    <meta property="og:description" content="AC/Non-AC 20-50 seater buses, tempo traveller, cars & trucks. Weddings, tours, corporate trips & pilgrimages. 24/7 booking — call +91-9337000323." />
+    <meta property="og:title" content="Zain Ventures India — Inter-State Bus Hire from Rourkela" />
+    <meta property="og:description" content="Inter-state coaches, tempo travellers, cars and trucks from Rourkela across Odisha, Jharkhand, West Bengal and Uttar Pradesh. AC/Non-AC 20-50 seater. Same-day booking. Call +91-9337000323." />
     <meta property="og:type" content="business.business" />
     <meta property="og:url" content="https://www.zainventures.in" />
     <meta property="og:image" content="https://www.zainventures.in/logo.png" />
@@ -46,8 +49,8 @@
     <meta property="place:location:longitude" content="84.8536" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Zain Ventures India — Bus Hire & Rental in Rourkela" />
-    <meta name="twitter:description" content="AC/Non-AC 20-50 seater buses, tempo traveller, cars & trucks. Weddings, tours, corporate trips. 24/7 — call +91-9337000323." />
+    <meta name="twitter:title" content="Zain Ventures India — Inter-State Bus Hire from Rourkela" />
+    <meta name="twitter:description" content="Inter-state coaches, tempo travellers, cars from Rourkela across Odisha, Jharkhand, Bengal & UP. 24/7 — call +91-9337000323." />
     <meta name="twitter:image" content="https://www.zainventures.in/logo.png" />
     <meta name="twitter:site" content="@ZainVenturesIn" />
     <meta name="twitter:creator" content="@ZainVenturesIn" />
@@ -130,6 +133,42 @@
     }
     </script>
 
+    <!-- Service catalogue: each top service as a first-class Service entity -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {"@type":"Service","@id":"https://www.zainventures.in#svc-bus","serviceType":"Inter-state bus hire","name":"Inter-state bus hire from Rourkela","description":"AC and Non-AC bus rental for inter-state travel from Rourkela. 20, 30, 35, 40 and 50-seater coaches with professional drivers and live GPS tracking. Operates across Odisha, Jharkhand, West Bengal and Uttar Pradesh.","provider":{"@id":"https://www.zainventures.in"},"areaServed":[{"@type":"State","name":"Odisha"},{"@type":"State","name":"Jharkhand"},{"@type":"State","name":"West Bengal"},{"@type":"State","name":"Uttar Pradesh"}],"availableChannel":{"@type":"ServiceChannel","servicePhone":"+919337000323","serviceUrl":"https://www.zainventures.in#book","availableLanguage":["English","Hindi","Odia"]}},
+        {"@type":"Service","@id":"https://www.zainventures.in#svc-wedding","serviceType":"Wedding bus rental","name":"Wedding bus & baraat coach rental Rourkela","description":"Decorated AC luxury coaches (40-50 seater) and mini buses for wedding processions, baraat, marriage and engagement guest transport across Odisha. Booking advised during the November-February wedding season.","provider":{"@id":"https://www.zainventures.in"},"areaServed":{"@type":"State","name":"Odisha"}},
+        {"@type":"Service","@id":"https://www.zainventures.in#svc-corp","serviceType":"Corporate transportation","name":"Corporate bus hire & employee transit Rourkela","description":"Employee shuttles, conferences, team offsites and inter-state corporate travel from Rourkela. Recurring contracts and one-off events.","provider":{"@id":"https://www.zainventures.in"}},
+        {"@type":"Service","@id":"https://www.zainventures.in#svc-school","serviceType":"School & college trip bus","name":"School trip & college excursion bus Rourkela","description":"GPS-tracked buses for school trips, college excursions, NCC camps and industrial visits. Group rates for student bookings.","provider":{"@id":"https://www.zainventures.in"}},
+        {"@type":"Service","@id":"https://www.zainventures.in#svc-pilgrim","serviceType":"Pilgrimage / tirth yatra bus","name":"Pilgrimage & temple-tour bus Rourkela","description":"Tirth yatra coaches from Rourkela to Puri (Jagannath Temple), Varanasi, Deoghar (Baidyanath), Gaya and other religious destinations.","provider":{"@id":"https://www.zainventures.in"}},
+        {"@type":"Service","@id":"https://www.zainventures.in#svc-tempo","serviceType":"Tempo traveller rental","name":"12 / 17 seater AC tempo traveller on rent Rourkela","description":"AC tempo travellers (12 or 17 seater) with professional drivers for family trips, group pilgrimages and small group outings.","provider":{"@id":"https://www.zainventures.in"}},
+        {"@type":"Service","@id":"https://www.zainventures.in#svc-car","serviceType":"Premium car rental","name":"Sedan & SUV rental in Rourkela","description":"Chauffeured premium sedans and luxury SUVs for business travel, family vacations and inter-state tours.","provider":{"@id":"https://www.zainventures.in"}}
+      ]
+    }
+    </script>
+
+    <!-- Each popular route as a TouristTrip with itinerary -->
+    <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"ItemList",
+      "name":"Inter-state bus routes from Rourkela",
+      "itemListElement":[
+        {"@type":"ListItem","position":1,"item":{"@type":"TouristTrip","name":"Rourkela to Puri bus","description":"Inter-state coach service from Rourkela to Puri (Jagannath Temple, Konark Sun Temple, Puri beach). Approximately 500 km, 9-10 hours.","itinerary":[{"@type":"City","name":"Rourkela"},{"@type":"City","name":"Puri"}],"provider":{"@id":"https://www.zainventures.in"},"subjectOf":{"@type":"WebPage","url":"https://www.zainventures.in#routes"}}},
+        {"@type":"ListItem","position":2,"item":{"@type":"TouristTrip","name":"Rourkela to Bhubaneswar bus","description":"Inter-state coach to the Odisha state capital. Approximately 370 km, 7-8 hours.","itinerary":[{"@type":"City","name":"Rourkela"},{"@type":"City","name":"Bhubaneswar"}],"provider":{"@id":"https://www.zainventures.in"}}},
+        {"@type":"ListItem","position":3,"item":{"@type":"TouristTrip","name":"Rourkela to Kolkata bus","description":"Inter-state sleeper / semi-sleeper coach to Kolkata, West Bengal. Approximately 540 km, 10-11 hours.","itinerary":[{"@type":"City","name":"Rourkela"},{"@type":"City","name":"Kolkata"}],"provider":{"@id":"https://www.zainventures.in"}}},
+        {"@type":"ListItem","position":4,"item":{"@type":"TouristTrip","name":"Rourkela to Ranchi bus","description":"Inter-state coach to Ranchi, Jharkhand. Approximately 210 km, 4-5 hours.","itinerary":[{"@type":"City","name":"Rourkela"},{"@type":"City","name":"Ranchi"}],"provider":{"@id":"https://www.zainventures.in"}}},
+        {"@type":"ListItem","position":5,"item":{"@type":"TouristTrip","name":"Rourkela to Jamshedpur bus","description":"Inter-state coach to Jamshedpur (Tatanagar), Jharkhand. Approximately 180 km, 3-4 hours.","itinerary":[{"@type":"City","name":"Rourkela"},{"@type":"City","name":"Jamshedpur"}],"provider":{"@id":"https://www.zainventures.in"}}},
+        {"@type":"ListItem","position":6,"item":{"@type":"TouristTrip","name":"Rourkela to Sambalpur bus","description":"Day-trip coach to Sambalpur (Hirakud Dam region), Odisha. Approximately 165 km, 3-4 hours.","itinerary":[{"@type":"City","name":"Rourkela"},{"@type":"City","name":"Sambalpur"}],"provider":{"@id":"https://www.zainventures.in"}}},
+        {"@type":"ListItem","position":7,"item":{"@type":"TouristTrip","name":"Rourkela to Simlipal bus","description":"Coach for Simlipal tiger reserve, Barehipani waterfall and Mayurbhanj district. Approximately 230 km, 5 hours.","itinerary":[{"@type":"City","name":"Rourkela"},{"@type":"City","name":"Simlipal"}],"provider":{"@id":"https://www.zainventures.in"}}},
+        {"@type":"ListItem","position":8,"item":{"@type":"TouristTrip","name":"Rourkela to Varanasi bus","description":"Inter-state pilgrimage coach to Varanasi, Uttar Pradesh. Approximately 880 km, 16 hours.","itinerary":[{"@type":"City","name":"Rourkela"},{"@type":"City","name":"Varanasi"}],"provider":{"@id":"https://www.zainventures.in"}}},
+        {"@type":"ListItem","position":9,"item":{"@type":"TouristTrip","name":"Rourkela to Cuttack bus","description":"Inter-state coach to Cuttack (Bali Yatra, silver filigree shopping), Odisha. Approximately 350 km, 7 hours.","itinerary":[{"@type":"City","name":"Rourkela"},{"@type":"City","name":"Cuttack"}],"provider":{"@id":"https://www.zainventures.in"}}}
+      ]
+    }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600;12..96,700&family=Fraunces:ital,opsz,wght,SOFT@0,9..144,400..900,0..100;1,9..144,400..900,0..100&family=JetBrains+Mono:wght@400;500;700&display=swap" />
@@ -170,9 +209,8 @@
         <nav class="nav-links" aria-label="Primary">
           <a href="#routes"><span>01</span> Routes</a>
           <a href="#fleet"><span>02</span> Fleet</a>
-          <a href="#why"><span>03</span> Why us</a>
+          <a href="#book"><span>03</span> Booking</a>
           <a href="#faq"><span>04</span> FAQ</a>
-          <a href="#book"><span>05</span> Booking</a>
         </nav>
         <a href="tel:+919337000323" class="nav-call">
           <span class="pulse"></span>
@@ -188,9 +226,8 @@
       <nav>
         <a href="#routes" data-i="01">Routes</a>
         <a href="#fleet" data-i="02">Fleet</a>
-        <a href="#why" data-i="03">Why us</a>
+        <a href="#book" data-i="03">Booking</a>
         <a href="#faq" data-i="04">FAQ</a>
-        <a href="#book" data-i="05">Booking</a>
       </nav>
       <div class="menu-cta">
         <a href="tel:+919337000323" class="btn btn-primary">Call +91-9337000323</a>
@@ -204,8 +241,8 @@
     <main id="top" aria-label="Zain Ventures India — inter-state bus hire">
 
       <!-- Crawl-friendly summary (visually hidden, fully indexable) -->
-      <section class="visually-hidden" aria-hidden="false">
-        <h1>Zain Ventures India — Inter-State Bus Hire from Rourkela, Odisha</h1>
+      <section class="visually-hidden" aria-hidden="false" aria-label="Site summary">
+        <h2>Zain Ventures India — Inter-State Bus Hire from Rourkela, Odisha</h2>
         <p>Zain Ventures India (established 2014) operates a fleet of AC and Non-AC buses (20 to 50 seater), tempo travellers (12 and 17 seater), premium sedans, SUVs and cargo trucks for inter-state hire from Rourkela. We serve Odisha, Jharkhand, West Bengal and Uttar Pradesh — popular routes from Rourkela include Puri (500 km, 9–10 hrs), Bhubaneswar (370 km, 7 hrs), Kolkata (540 km, 10–11 hrs), Ranchi (210 km, 4–5 hrs), Jamshedpur (180 km, 3–4 hrs), Sambalpur (165 km, 3–4 hrs), Cuttack (350 km, 7 hrs), Simlipal (230 km, 5 hrs), Varanasi (880 km, 16 hrs), Konark, Deoghar, Gaya, Bokaro and Dhanbad. Use cases: weddings, baraat, pilgrimages and tirth yatra, corporate transit and offsites, school and college trips, NCC camps, family picnics, festival travel for Durga Puja and Rath Yatra, medical visits and tourism. All vehicles are GPS-tracked, fully insured and operated by professional, trained drivers. Available 24 hours, 7 days a week. Call +91-9337000323 or +91-8093552723, WhatsApp +91-8093552723, email zainventures@outlook.com. Office at Rahmans Colony, Bisra, Rourkela, Sundargarh District, Odisha 769001, India. Languages: English, Hindi, Odia. Payment: Cash, Credit Card, Debit Card, UPI, Bank Transfer (INR).</p>
       </section>
 
@@ -572,37 +609,11 @@
           </article>
         </div>
       </section>
-
-
-
-
-
-      <section class="faq" id="faq">
-        <div class="section-head">
-          <div class="sh-meta">
-            <span class="sh-num">§ 06</span>
-            <span class="sh-tag">QUESTIONS</span>
-          </div>
-          <h2 class="display">Frequently<br/><em>asked</em>.</h2>
-        </div>
-
-        <div class="faq-list">
-          <details class="faq-item"><summary><span class="q-no">01</span> How do I book a bus in Rourkela?<span class="q-icon"></span></summary><div class="faq-body">Call <a href="tel:+919337000323">+91 93370 00323</a> or <a href="tel:+918093552723">+91 80935 52723</a>, or fill the booking form below. AC and non-AC buses from 20 to 50 seats — most bookings are confirmed the same day in under 30 minutes.</div></details>
-          <details class="faq-item"><summary><span class="q-no">02</span> What's the rental price?<span class="q-icon"></span></summary><div class="faq-body">Pricing varies by vehicle type, distance and trip duration. Non-AC mini buses start at lower per-km rates; 50-seater AC luxury coaches sit at the top end. Quotes always include driver allowance. Call us with your route and dates for an exact figure.</div></details>
-          <details class="faq-item"><summary><span class="q-no">03</span> What types of buses are available?<span class="q-icon"></span></summary><div class="faq-body">20-seater mini buses, 30/35-seater standard coaches, 40-seater deluxe buses, 50-seater luxury AC coaches, 12/17-seater tempo travellers, Volvo buses, push-back, and sleeper / semi-sleeper. All come with professional drivers and live GPS tracking.</div></details>
-          <details class="faq-item"><summary><span class="q-no">04</span> Can I book a bus from Rourkela to Puri?<span class="q-icon"></span></summary><div class="faq-body">Yes — about 500 km, 9–10 hours. Popular for Jagannath Temple darshan and beach trips. AC coaches, mini buses and tempo travellers are all available on this route.</div></details>
-          <details class="faq-item"><summary><span class="q-no">05</span> Tempo traveller on rent?<span class="q-icon"></span></summary><div class="faq-body">Yes. 12-seater and 17-seater AC tempo travellers, with professional drivers — ideal for groups of 8–15 on family trips, pilgrimages and small group outings.</div></details>
-          <details class="faq-item"><summary><span class="q-no">06</span> Wedding bus hire?<span class="q-icon"></span></summary><div class="faq-body">Yes — AC deluxe (40-50 seater), mini buses (20-25 seater) and tempo travellers for baraat and guests, with optional decoration. Advance booking is strongly recommended during the November–February wedding season.</div></details>
-          <details class="faq-item"><summary><span class="q-no">07</span> School / college trips?<span class="q-icon"></span></summary><div class="faq-body">Yes. Buses for school trips, college excursions, industrial visits, NCC camps and educational tours — all GPS-tracked, with experienced drivers and student group rates.</div></details>
-          <details class="faq-item"><summary><span class="q-no">08</span> What areas do you serve?<span class="q-icon"></span></summary><div class="faq-body">Every neighbourhood inside Rourkela — Chhend, Civil Township, Uditnagar, Panposh, Vedvyas, Bondamunda, Bisra, Sectors 5/7/19, Tangarpali, Koel Nagar, Shaktinagar, Fertilizer Township, Basanti Colony, Plant Site Area — plus Sundargarh, Rajgangpur, Bonai and surrounding towns.</div></details>
-        </div>
-      </section>
-
       <!-- BOARDING PASS — booking form -->
       <section class="book" id="book">
         <div class="section-head">
           <div class="sh-meta">
-            <span class="sh-num">§ 07</span>
+            <span class="sh-num">§ 03</span>
             <span class="sh-tag">BOARDING PASS</span>
           </div>
           <h2 class="display">Tell us where<br/>you're <em>going</em>.</h2>
@@ -761,6 +772,32 @@
               <a href="https://wa.me/918093552723?text=Hi,%20I%20want%20to%20book%20a%20bus">WhatsApp →</a>
             </div>
           </aside>
+        </div>
+      </section>
+
+
+
+
+
+
+      <section class="faq" id="faq">
+        <div class="section-head">
+          <div class="sh-meta">
+            <span class="sh-num">§ 04</span>
+            <span class="sh-tag">QUESTIONS</span>
+          </div>
+          <h2 class="display">Frequently<br/><em>asked</em>.</h2>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item"><summary><span class="q-no">01</span> How do I book a bus in Rourkela?<span class="q-icon"></span></summary><div class="faq-body">Call <a href="tel:+919337000323">+91 93370 00323</a> or <a href="tel:+918093552723">+91 80935 52723</a>, or fill the booking form below. AC and non-AC buses from 20 to 50 seats — most bookings are confirmed the same day in under 30 minutes.</div></details>
+          <details class="faq-item"><summary><span class="q-no">02</span> What's the rental price?<span class="q-icon"></span></summary><div class="faq-body">Pricing varies by vehicle type, distance and trip duration. Non-AC mini buses start at lower per-km rates; 50-seater AC luxury coaches sit at the top end. Quotes always include driver allowance. Call us with your route and dates for an exact figure.</div></details>
+          <details class="faq-item"><summary><span class="q-no">03</span> What types of buses are available?<span class="q-icon"></span></summary><div class="faq-body">20-seater mini buses, 30/35-seater standard coaches, 40-seater deluxe buses, 50-seater luxury AC coaches, 12/17-seater tempo travellers, Volvo buses, push-back, and sleeper / semi-sleeper. All come with professional drivers and live GPS tracking.</div></details>
+          <details class="faq-item"><summary><span class="q-no">04</span> Can I book a bus from Rourkela to Puri?<span class="q-icon"></span></summary><div class="faq-body">Yes — about 500 km, 9–10 hours. Popular for Jagannath Temple darshan and beach trips. AC coaches, mini buses and tempo travellers are all available on this route.</div></details>
+          <details class="faq-item"><summary><span class="q-no">05</span> Tempo traveller on rent?<span class="q-icon"></span></summary><div class="faq-body">Yes. 12-seater and 17-seater AC tempo travellers, with professional drivers — ideal for groups of 8–15 on family trips, pilgrimages and small group outings.</div></details>
+          <details class="faq-item"><summary><span class="q-no">06</span> Wedding bus hire?<span class="q-icon"></span></summary><div class="faq-body">Yes — AC deluxe (40-50 seater), mini buses (20-25 seater) and tempo travellers for baraat and guests, with optional decoration. Advance booking is strongly recommended during the November–February wedding season.</div></details>
+          <details class="faq-item"><summary><span class="q-no">07</span> School / college trips?<span class="q-icon"></span></summary><div class="faq-body">Yes. Buses for school trips, college excursions, industrial visits, NCC camps and educational tours — all GPS-tracked, with experienced drivers and student group rates.</div></details>
+          <details class="faq-item"><summary><span class="q-no">08</span> What areas do you serve?<span class="q-icon"></span></summary><div class="faq-body">Every neighbourhood inside Rourkela — Chhend, Civil Township, Uditnagar, Panposh, Vedvyas, Bondamunda, Bisra, Sectors 5/7/19, Tangarpali, Koel Nagar, Shaktinagar, Fertilizer Township, Basanti Colony, Plant Site Area — plus Sundargarh, Rajgangpur, Bonai and surrounding towns.</div></details>
         </div>
       </section>
 

@@ -606,10 +606,18 @@
     window.addEventListener("mousemove", onMagMove, { passive: true });
   }
 
-  // ---------- Page-load curtain cleanup ----------
+  // ---------- Page-load curtain ----------
+  // Full curtain (~2.4s) on first visit; skipped on repeat in same session.
+  try {
+    if (sessionStorage.getItem("zv:seen") === "1") {
+      document.body.classList.add("curtain-skip");
+    } else {
+      sessionStorage.setItem("zv:seen", "1");
+    }
+  } catch (_) { /* sessionStorage blocked */ }
   const curtain = document.querySelector(".curtain");
   if (curtain) {
-    setTimeout(() => curtain.classList.add("gone"), 3700);
+    setTimeout(() => curtain.classList.add("gone"), 2500);
   }
 
   // ---------- Form: decorative submit feedback ----------

@@ -79,8 +79,10 @@ input, select, textarea { font: inherit; color: inherit; }
   background: var(--paper);
   display: flex; align-items: center; justify-content: center;
   pointer-events: none;
-  animation: curtainExit 0.9s 2.6s cubic-bezier(.6,0,.2,1) forwards;
+  animation: curtainExit 0.7s 1.7s cubic-bezier(.6,0,.2,1) forwards;
 }
+/* Skip the curtain entirely on repeat visits in the same session */
+body.curtain-skip .curtain { display: none; }
 .curtain::before {
   content: "";
   position: absolute; inset: 0;
@@ -137,6 +139,12 @@ input, select, textarea { font: inherit; color: inherit; }
 @keyframes cTagIn  { to { opacity: 1; transform: translateY(0); } }
 @keyframes curtainExit { to { opacity: 0; transform: translateY(-12px); } }
 .curtain.gone { display: none; }
+
+/* Below-fold sections: defer rendering work until they scroll near */
+.fleet, .faq, .book, .foot {
+  content-visibility: auto;
+  contain-intrinsic-size: 800px;
+}
 
 /* ===== Typography — refined sizes ===== */
 .display {
